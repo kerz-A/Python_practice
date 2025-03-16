@@ -1,0 +1,9 @@
+bday = int(input('Введи день рождения программиста '))
+byear = int(input('Введи год рождения программиста '))
+
+if (bday == 29) and ((byear % 400 == 0) or (byear % 100 != 0) and (byear % 4 == 0)):
+    print('очень ценный программист')
+elif (bday == 29) and not ((byear % 400 == 0) or (byear % 100 != 0) and (byear % 4 == 0)):
+    print('Мошенник')
+else:
+    print('Обычный программист')

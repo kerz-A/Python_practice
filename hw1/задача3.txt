@@ -1,0 +1,8 @@
+min_q = int(input('Введи целое неотрицательное число: '))
+if (min_q > 0):
+   days = (min_q // 1440)
+   hours = (min_q - (days * 1440)) // 60 
+   minutes = (min_q - (days * 1440)-(hours * 60))
+   print(f'Вывод программы: {hours:02}:{minutes:02}')
+else:
+   print('Введены некорректные входные данные')

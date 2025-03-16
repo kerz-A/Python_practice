@@ -1,0 +1,13 @@
+input_num = int(input('введи 6-значное десятичное число: '))
+num1 = (input_num // 100000) % 10
+num2 = (input_num // 10000) % 10
+num3 = (input_num // 1000) % 10
+num4 = (input_num // 100) % 10
+num5 = (input_num // 10) % 10
+num6 = input_num % 10
+num_642 = (num6 * 100) + (num4 * 10) + num2
+num_135 = (num1 * 100) + (num3 * 10) + num5
+prod_num = num_642 * num_135
+print('Входные данные: ', input_num)
+print('Вывод программы: ', end='')
+print(num_642, num_135, prod_num, sep='#')
